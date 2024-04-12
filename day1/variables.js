@@ -1,8 +1,6 @@
-var name = "Sansa shah" 
-let age = 7
-const gay = false
-console.log("my name is " + name)
-const fullName = `${name}`
-console.log(fullName)
-console.log(age)
-console.log(gay)
+var name = "Sansa sana" 
+let age = 22
+const gender = "female"
+console.log(`My full name is ${name}`) 
+console.log("my age is "  + age)
+console.log(`my gender is ${gender}`)
