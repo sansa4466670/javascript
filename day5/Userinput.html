@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Accepting User Input</title>
+</head>
+<body>
+    <h1>your input was</h1>
+    <h3 id="customInput">________</h3>
+<script>
+    var name = prompt("what is your name?","sansa")
+    var h3node = document.getElementById("customInput")
+    h3node.innerText = name.toLowerCase()
+    console.log("your name is",name)
+</script>
+</body>
+</html>
