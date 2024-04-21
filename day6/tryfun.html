@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>practice</title>
+</head>
+<body>
+    <!-- <p> hello, </p> -->
+    <span id ="welcome"></span>
+</body>
+    <script>
+      
+        var member =prompt("what is your name?")
+        var spanNode = document.getElementById("welcome");
+        var message = ""
+        var lowermember= member.toLowerCase()
+
+            if (lowermember === "sansa"){
+                message = "welcome to your website";
+            }else if (lowermember ==="hamza"){
+                message = "alu khau"
+            }else if (lowermember=== "lole"){
+                message = "lyam lyam"
+            }else if (lowermember==="cosine"){
+                message = "our chamber main"
+            }else{
+                  message = "your mom hates you."
+            }
+              
+         spanNode.innerHTML = "Hello, " + member + ". " + message;
+    </script>
+</html>

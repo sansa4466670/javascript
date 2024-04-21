@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Billing</title>
+</head>
+
+<body>
+    <span id="bill"></span>
+    <script>
+        function tip (total, tip=10,returnTipOnly =false){
+            tip = tip/100; 
+            var tipAmount = total * tip
+            total = total + tipAmount
+            if (returnTipOnly){
+                return tipAmount
+            }
+            return total
+
+        }
+        var foodBill = prompt("enter food bill")
+        foodBill = Number(foodBill)
+        var totalBill = tip(foodBill,10);
+               
+        //console.log (totalBill)
+    var bill = document.getElementById("bill")
+    bill.innerHTML = "your total bill is " + totalBill
+        var totalTip = tip(foodBill,10,true)
+     // console.log(totalTip)
+
+    </script>
+</body>
+</html>

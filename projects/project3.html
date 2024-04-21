@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <span id="hello"> </span>
+    <script>
+        var age = prompt("enter your age: ")
+        age=Number(age)
+        console.log(typeof (age))
+        if (age){
+            
+            if (age >18) {
+                var hello = document.getElementById("hello");
+                hello.innerHTML=" you can vote!!"
+
+            }
+        }else {
+            console.warn("not a number")
+        }
+    </script>
+    
+</body>
+</html>
